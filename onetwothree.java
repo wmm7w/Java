@@ -5,6 +5,9 @@ private static void setvars(){
     sum = 0;
     i = a;
 }
+private static void printsum(){
+    System.out.println(sum);;
+}
     public static void main(String[] args){
 
         Scanner read = new Scanner(System.in);
@@ -19,7 +22,7 @@ private static void setvars(){
             sum = sum + i;
             i++;
             if (i>b) {
-                System.out.println(sum);
+                printsum();
             }
         }
 
@@ -28,7 +31,7 @@ private static void setvars(){
             sum = sum + i;
             i++;
             if (i>b) {
-                System.out.println(sum);
+                printsum();
             }
         }while (i<=b);
 
@@ -36,7 +39,7 @@ private static void setvars(){
         for (i=a; i<=b; i++){
             sum = sum + i;
             if(i==b){
-                System.out.println(sum);
+                printsum();
             }
         }
     }
