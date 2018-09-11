@@ -1,19 +1,26 @@
 import java.util.Scanner;
-public class onetwothree {
-private static int a,b,i,sum;
-private static void setvars(){
+
+class onetwothree {
+
+private static int a,i,sum;
+
+private static void setvars() {
     sum = 0;
     i = a;
 }
 
-private static void licz(){
+private static void licz() {
     sum = sum+i;
     i++;
 }
-private static void printsum(){
-    System.out.println(sum);;
+
+private static void printsum() {
+    System.out.println(sum);
 }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
+
+    int b;
 
         Scanner read = new Scanner(System.in);
 
@@ -23,7 +30,7 @@ private static void printsum(){
         b = read.nextInt();
 
         setvars();
-        while (i<=b){
+        while (i<=b) {
             licz();
             if (i>b) {
                 printsum();
@@ -41,7 +48,7 @@ private static void printsum(){
         setvars();
         for (i=a; i<=b; i++){
             sum = sum + i;
-            if(i==b){
+            if(i==b) {
                 printsum();
             }
         }
