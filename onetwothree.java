@@ -1,7 +1,11 @@
 import java.util.Scanner;
 public class onetwothree {
+public static int a,b,i,sum;
+public static void setvars(){
+    sum = 0;
+    i = a;
+}
     public static void main(String[] args){
-        int a,b,i,sum;
 
         Scanner read = new Scanner(System.in);
 
@@ -10,8 +14,7 @@ public class onetwothree {
         System.out.println("Wprowadź b");
         b = read.nextInt();
 
-        sum = 0;
-        i = a;
+        setvars();
         while (i<=b){
             sum = sum + i;
             i++;
@@ -20,9 +23,7 @@ public class onetwothree {
             }
         }
 
-        sum = 0;
-        i = a;
-
+        setvars();
         do {
             sum = sum + i;
             i++;
@@ -31,9 +32,7 @@ public class onetwothree {
             }
         }while (i<=b);
 
-        sum = 0;
-        i = a;
-
+        setvars();
         for (i=a; i<=b; i++){
             sum = sum + i;
             if(i==b){
