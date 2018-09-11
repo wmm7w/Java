@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class onetwothree {
-public static int a,b,i,sum;
-public static void setvars(){
+private static int a,b,i,sum;
+private static void setvars(){
     sum = 0;
     i = a;
 }
