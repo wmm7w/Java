@@ -5,6 +5,11 @@ private static void setvars(){
     sum = 0;
     i = a;
 }
+
+private static void licz(){
+    sum = sum+i;
+    i++;
+}
 private static void printsum(){
     System.out.println(sum);;
 }
@@ -19,8 +24,7 @@ private static void printsum(){
 
         setvars();
         while (i<=b){
-            sum = sum + i;
-            i++;
+            licz();
             if (i>b) {
                 printsum();
             }
@@ -28,8 +32,7 @@ private static void printsum(){
 
         setvars();
         do {
-            sum = sum + i;
-            i++;
+            licz();
             if (i>b) {
                 printsum();
             }
